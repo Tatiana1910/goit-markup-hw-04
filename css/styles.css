@@ -135,6 +135,7 @@ button {
 
 .nav-link {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -342,13 +343,8 @@ button {
 .social-link {
   display: flex;
   gap: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 206px;
-  height: 44px;
-  padding: 0;
+  justify-content: center;
   margin-top: 16px;
-  list-style: none;
 }
 
 .social-link .link {
@@ -378,14 +374,12 @@ button {
   gap: 30px;
 }
 
-.clients {
+.clients-link {
   display: flex;
   height: 92px;
   width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin-bottom: 30px;
-  cursor: pointer;
   justify-content: center;
   align-items: center;
   color: #afb1b8;
@@ -397,8 +391,8 @@ button {
   fill: currentColor;
 }
 
-.clients:hover,
-.clients:focus {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid var(--accent-txt-cl);
   color: var(--accent-txt-cl);
 }
@@ -421,15 +415,15 @@ button {
   padding: 60px 0;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
 .adress-link {
   margin-top: 20px;
 }
-
-/* .footer-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
 
 .footer .link:hover,
 .footer .link:focus {
@@ -443,10 +437,6 @@ button {
   color: var(--transparent-white-cl);
 }
 
-.contact {
-  list-style: none;
-}
-
 .contact .address {
   color: var(--white-txt-cl);
 }
@@ -457,10 +447,6 @@ button {
 
 .address-item:last-child {
   margin-bottom: 0px;
-}
-
-.footer {
-  display: flex;
 }
 
 .join {
@@ -476,8 +462,6 @@ button {
 .footer-join {
   display: flex;
   gap: 10px;
-  padding: 0;
-  list-style: none;
 }
 
 .footer-join .link {
